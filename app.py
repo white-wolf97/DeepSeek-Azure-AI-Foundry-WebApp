@@ -1,5 +1,4 @@
 import os
-import re
 from flask import Flask, request, Response, render_template_string
 from azure.ai.inference import ChatCompletionsClient
 from azure.core.credentials import AzureKeyCredential
@@ -38,7 +37,7 @@ def home():
             </style>
         </head>
         <body>
-            <h1>DeepSeek WebApp</h1>
+            <h1>Practia's DeepSeek</h1>
             <div id="chat">
                 <div id="messages"></div>
                 <form onsubmit="sendMessage(event)">
